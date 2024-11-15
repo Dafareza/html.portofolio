@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Pendidikan Pesantren Pekalongan</title>
+    <style>
+        /* Resetting styles for consistent appearance */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling body and main container */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #6a9f6b;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #4b8c4b;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #3a6b3a;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://example.com/pekalongan.jpg'); /* Tempatkan URL gambar */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            z-index: 1;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about h3 {
+            font-size: 2.2em;
+            color: #6a9f6b;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Feature Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 0;
+            background-color: #f0f0f0;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature-item img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .feature-item h4 {
+            font-size: 1.4em;
+            color: #6a9f6b;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonial Section */
+        .testimonials {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .testimonials h3 {
+            font-size: 2em;
+            color: #6a9f6b;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-item {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            font-style: italic;
+            color: #555;
+            position: relative;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-item::before {
+            content: "“";
+            font-size: 2em;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            color: #6a9f6b;
+        }
+
+        /* Call-to-Action Section */
+        .cta {
+            background-color: #4b8c4b;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cta h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta button {
+            font-size: 1em;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background-color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Pesona Pendidikan Pesantren di Pekalongan</h1>
+        <p>Mencetak generasi yang berakhlak mulia dan berdaya saing</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#features">Fitur</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#cta">Daftar Sekarang</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Belajar dengan Nilai-Nilai Islam</h2>
+            <p>Pendidikan berbasis pesantren yang mendidik generasi berprestasi</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Tentang Pesantren Pekalongan</h3>
+            <p>Pekalongan adalah kota yang dikenal dengan pesantren yang memiliki sistem pendidikan unggulan dan modern. Mengutamakan pendidikan agama, ilmu pengetahuan, dan nilai-nilai moral, pesantren di Pekalongan siap mendidik generasi penerus yang tangguh, beriman, dan berakhlak mulia.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="feature-item">
+                <img src="ngaji.jpeg" alt="Program Tahfidz">
+                <h4>Program Tahfidz Al-Qur'an</h4>
+                <p>Melatih santri untuk menghafal Al-Qur'an dengan metode yang terstruktur dan efektif.</p>
+            </div>
+            <div class="feature-item">
+                <img src="lingkungan.jpeg" alt="Lingkungan Islami">
+                <h4>Lingkungan Islami</h4>
+                <p>Lingkungan yang mendukung pembentukan karakter islami dan kemandirian santri.</p>
+            </div>
+            <div class="feature-item">
+                <img src="WhatsApp Image 2024-11-11 at 17.25.11.jpeg" alt="Ekstrakurikuler Unggulan">
+                <h4>Ekstrakurikuler Unggulan</h4>
+                <p>Beragam kegiatan ekstrakurikuler yang mengembangkan potensi akademik dan non-akademik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h3>Testimoni Santri dan Alumni</h3>
+        <div class="container">
+            <div class="testimonial-item">
+                <p>"Pesantren ini mengajarkan saya untuk lebih mencintai ilmu agama sekaligus mengasah kemampuan akademik saya. Saya merasa lebih siap untuk menghadapi tantangan masa depan."</p>
+                <p>- Ahmad, Alumni</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Lingkungan yang Islami dan para guru yang sangat peduli membuat saya merasa seperti di rumah sendiri. Saya belajar banyak tentang kemandirian dan nilai-nilai Islam."</p>
+                <p>- Aisyah, Santri</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Program Tahfidz yang ada sangat luar biasa. Dengan bimbingan para ustadz, saya berhasil menghafal Al-Qur'an dengan metode yang mudah dan menyenangkan."</p>
+                <p>- Fatimah, Alumni</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="cta">
+        <h3>Bergabunglah Bersama Kami</h3>
+        <p>Raih pendidikan yang menyeluruh dalam suasana pesantren yang Islami. Daftarkan diri Anda sekarang dan jadilah bagian dari generasi penerus yang berakhlak mulia dan berprestasi.</p>
+        <button onclick="window.location.href='https://example.com/pendaftaran'">Daftar Sekarang</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pesantren Pekalongan. Semua hak dilindungi.</p>
+        <p>Hubungi kami: <a href="mailto:info@pesantrenpekalongan.com" style="color: #f7f7f7; text-decoration: underline;">info@pesantrenpekalongan.com</a></p>
+    </footer>
+</body>
+</html>
